@@ -1,0 +1,17 @@
+@import url('https://unpkg.com/@catppuccin/palette/css/catppuccin.css');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+html {
+	color: var(--ctp-macchiato-text);
+	background-color: var(--ctp-macchiato-base);
+
+	font-family: "Fira Code", monospace;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+}
+
+#header-div {
+	margin-top: 20px;
+	margin-left: 50px;
+}
