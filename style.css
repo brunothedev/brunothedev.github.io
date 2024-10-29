@@ -11,6 +11,14 @@ html {
 	font-style: normal;
 }
 
+a:link {
+	color: var(--ctp-macchiato-green);
+}
+
+a:visited {
+	color: var(--ctp-macchiato-sky);
+}
+
 #header-div {
 	margin-top: 20px;
 	margin-left: 50px;
