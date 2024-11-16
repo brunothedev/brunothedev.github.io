@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+    		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>A brief introduction to physics</title>
+		<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    		<link rel="stylesheet" href="../style.css">
+  	</head>
+  	<body>
+		<a class="home-btn" href="https://brunothedev.github.io">Home</a>
+		<div class="essay-body">
+			<h1>A brief introduction to physics</h1>
+			<h3>Prerequisites</h3>
+			<p>You shouldn't need to know much, you can get by searching the meaning of the words here, but if you can, please watch 3blue1brown's calculus series, and search what is a vector in physics before starting.</p>
+			<h3>Newton's laws of motion</h3>
+			<p>They describe(of course) the movement of objects, they are divided into three laws, they are:</p>
+
+			<ol>
+				<li>"A body remains at rest or at motion until a force is applied to it", basically, the speed of a body is constant until some force is applied to it, example, a ball will keep at rest until i push it, this is called inertia.</li>
+				<li>"The net force(sums of all forces applied to the object) is the derivative(rate of change) of momentum", this is the famous \(F = ma\), since momentum is \(p = mv\), when you differentiate momentum, you differentiate both mass and velocity, and as mass is (usually) constant, you only differentiate velocity, which results in acceleration.</li>
+				<li>"If object A applies a force to object B, a force of same strength(magnitude), but opposite direction, will be applied on A", this explains things like rockets and air friction, the rocket applies a force to its bottom, which results in a upwards force.</li>
+			</ol>
+
+			<p>These laws provide the base for Newtonian mechanics(yes, this isn't the only mechanics framework, but the two others are more niche), you can use them to derive many equations, like the <a href="https://en.wikipedia.org/wiki/Centripetal_force">centripetal force</a>, which is derived by using \(F = ma\), and then finding \(a\).</p>
+
+			<h3>Gravity</h3>
+
+			<p>We can calculate gravity with \(F = G \frac{m_1 m_2}{r²}\)(remember, there are other versions of this formula, be careful),  where \(m_1\) and \(m_2\) are the masses of two objects, \(r\) is the distance between them, and \(G\) is the <a href="https://en.wikipedia.org/wiki/Gravitational_constant">gravitational constant</a>.</p>
+
+			<h3>Work and energy</h3>
+			<p>Lets start with some definitions, shall we?</p>
+
+			<p>Energy: A property that quantitates the ability to enact force, example, me throwing a ball up, i'm converting the energy from my body to a force on the ball. There are various types of energy, here are some:</p>
+
+			<ul>
+				<li>Kinetic energy: The form of energy associated with motion. Calculated by \(E_k = \frac{1}{2}mv²\)</li>
+				<li>Potential energy: This quantitates future kinetic energy, like me holding a ball up, it could be converted to kinectic energy if i let it fall, the potential energy shows how much kinetic energy it would have if i let it fall. There are many types of potential energy, but the most common is gravitational potential energy(present in the example), GPE is calculated by \(mgh\), where \(h\) is the height and \(g\) is the gravity of the earth.</li>
+				<li>Mechanical energy: It is the sum of kinetic and potential energy, it is always constant, because potential energy converts into kinetic energy and vice versa.</li>
+			</ul>
+
+			<p>Work: It is the energy that is converted to a force, using the ball example, i do work by converting my energy into force. If the force is constant, work is calculated by the dot product \(W = \vec{F} \cdot \vec{s}\)</p>
+
+			<p>Work and kinetic energy are related by the work-energy theorem, which states \(W = \Delta E_k\)(delta means difference, aka final value minus initial value).</p>
+
+			<h3>Rotational motion</h3>
+
+			<p>Rotational motion is the way we apply mechanics to things that rotate around a center, like ball rotating, tied on a string to the center.</p>
+			<p>One of the most important things to learn in rotational motion is the moment of inertia, let's think about newton's first law, inertia is basically resistance to change in velocity, in normal mechanics, this is measured by mass(\(a = \frac{F}{m}\), more mass, less acceleration), the more mass an object has, the harder is it to change it's velocity, but in rotational motion, this is measured by the moment of inertia.</p>
+			<p>The moment of inertia is calculated by \(I = \sum_i m_i r²_i\), where \(m\) is the mass and \(r\) is the distance of the point from the center(radius), it is a summation because you must calculate them for each point in your object, for example, if there are two points, the you calculate \(mr²\) for each of them and add them up, if your object is something continuous, like a disk, them you can use an integral.</p>
+
+			<p>What about momentum? The analogue for momentum in rotational motion is angular momentum, calculated by \(L = I\omega\), where \(I\) is the moment of inertia and \(\omega\) is angular velocity(which is the change in angle in one second, or radians per second).</p>
+
+			<p>What about force? The analogue for force in rotational motion is torque, calculated by the cross product \(\tau = r \times F\), just like net force can be calculated by the derivative of momentum, so can torque: $$\tau = \frac{dL}{dt}$$</p>
+			<h3>Conclusion</h3>
+			<p>I would've tried to explain much more here, like electrodynamics, for example, but i'm constrained by the more advanced calculus which is needed, you can <a href="https://brunothedev.github.io/p/2024-10-28-how_to_learn.html">teach them yourself</a>(i personally self-taught all things here), if you need some help, you can email me at <a href="mailto:brunothedev@proton.me">brunothedev@proton.me</a>, i'm bored and have plenty of free time.</p>
+		</div>
+	</body>
+</html>
